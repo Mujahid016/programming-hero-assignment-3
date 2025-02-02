@@ -1,11 +1,545 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>programming-hero-assignment-3</title>
-</head>
-<body>
+  <!-- google foont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+ <!-- tailwind cdn -->
+ <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/fd86a39d35.js" crossorigin="anonymous"></script>
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-adlam-display {
+  font-family: "ADLaM Display", serif;
+    }
+  .sora-font {
+  font-family: "Sora", serif;
+}
+  </style>
+</head>
+<body class="font-adlam-display  w-full">
+  <nav class=" bg-[#FFF9F4]  sm:bg-[#FFF9F4]  lg:bg-[#FFF9F4] b xl:bg-[#FFF9F4]  mb-14">
+   <div class="flex justify-between  mx-1 sm:justify-between  items-center sora-font container mx-auto  h-14 ">
+   <div class="flex"> 
+    <div>     <img class="ml-2 sm:h-7 w-7 mr-1" src="c1-assets/logo-header.png" alt=""></div>
+     <div><h2 class="hidden sm:block ">Browse<span class="text-[#FFDC26] ">4</span>Pets</h2></div>
+    </div>
+     <div class="hidden sm:block ">
+      <ul class="flex space-x-3">
+        <li><a href="">Find a Pet</a></li>
+        <li><a href="">Breeds</a> </li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+     </div>
+     <div class="hidden sm:block ">
+      
+      <i class="fa-regular fa-bell mr-1"></i>
+      <i class="fa-solid fa-magnifying-glass mr-1"></i>
+      <button class="border w-13 h-8 border-1 p-1 mt-px rounded-md border-[#FFDC26] mr=-1">Login</button>
+
+
+      <button class="border border-1 p-1 mt-px rounded-md w-30 h-8 border-[#FFDC26] bg-[#FFDC26] mr-1">Register</button>
+      
+      
+      
+      
+     </div>
+    
+     <div>
+      <div class="mr-2 justify-items-end sm:hidden md:hidden lg:hidden xl:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16">
+       </path>
+    </svg>
+ 
+  </div>
+     </div>
+   </div>
+  </nav>
+  <!-- header -->
+   <header class="container mx-auto mb-24">
+     <section class="container mx-auto ">
+       <div class="relative">
+      <div class="  space-y-4 sm:absolute top-8 ">
+        <h2 class="text-2xl ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
+        <p class="text-gray-500 sora-font text-sm">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+        <button class="animate-bounce border w-20 p-3 text-xs bg-[#FFDC26] rounded-md sora-font  ">
+          Find a pet
+        </button>
+       
+        
+      </div>
+     <div>
+      <img class="" src="c1-assets/cat-big.png" alt="">
+      
+     </div>
+    </div>
+     </section>
+   </header>
+   <!-- main -->
+   <main class="">
+     <section class="container mx-auto mb-24">
+      <h2 class="mb-9">Browse By Categories</h2>
+
+     <div class="grid grid-cols-2 sm:grid-cols-6 space-x-2 space-y-2 ">
+         
+
+      <div class="h-60 w-44 gap-2  border bg-[#F9DF8A]">
+
+        <div class="avatar flex flex-col justify-center items-center">
+          <div class="w-20 m-4 bg-white rounded-full">
+            <img class="p-4" src="c1-assets/dog-cartoon.png" />
+           
+          </div>
+          <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+            <p class="sora-font text-base">3 items</p></div>
+          </div>
+          </div>
+          
+       <div class="h-60 w-44   border bg-[#F9DF8A]">
+         <div class="avatar flex flex-col justify-center items-center">
+           <div class="w-20 m-4 bg-white rounded-full">
+             <img class="p-4" src="c1-assets/dog-cartoon.png" />
+            
+           </div>
+           <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+             <p class="sora-font text-base">3 items</p></div>
+           </div>
+           </div>
+       <div class="h-60 w-44  border bg-[#F9DF8A]">
+         <div class="avatar flex flex-col justify-center items-center">
+           <div class="w-20 m-4 bg-white rounded-full">
+             <img class="p-4" src="c1-assets/dog-cartoon.png" />
+            
+           </div>
+           <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+             <p class="sora-font text-base">3 items</p></div>
+           </div>
+           </div>
+       <div class="h-60 w-44  border bg-[#F9DF8A]">
+         <div class="avatar flex flex-col justify-center items-center">
+           <div class="w-20 m-4 bg-white rounded-full">
+             <img class="p-4" src="c1-assets/dog-cartoon.png" />
+            
+           </div>
+           <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+             <p class="sora-font text-base">3 items</p></div>
+           </div>
+           </div>
+       <div class="h-60 w-44 border bg-[#F9DF8A]">
+         <div class="avatar flex flex-col justify-center items-center">
+           <div class="w-20 m-4 bg-white rounded-full">
+             <img class="p-4" src="c1-assets/dog-cartoon.png" />
+            
+           </div>
+           <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+             <p class="sora-font text-base">3 items</p></div>
+           </div>
+           </div>
+       <div class="h-60 w-44 border bg-[#F9DF8A]">
+         <div class="avatar flex flex-col justify-center items-center">
+           <div class="w-20 m-4 bg-white rounded-full">
+             <img class="p-4" src="c1-assets/dog-cartoon.png" />
+            
+           </div>
+           <div class="text-center text-xl mb-2"> <h2>Dog</h2>
+             <p class="sora-font text-base">3 items</p></div>
+           </div>
+           </div>
+      
+      
+       </div>
+ 
+     </section>
+
+     <section class=" bg-[#FFF9F4]" >
+      <div class="container mx-auto ">
+
+       <div class="">
+        <h2 class="mb-9  text-4xl ">Trending Pet Products</h2>
+       </div>
+
+         <div class=" flex  space-x-4 gap-3">
+            <div class=" w-100 h-90 border bg-[#F9DF8A] flex  left-4 rounded-lg gap-x-2 relative">
+                 <div class="m-6 space-y-4">
+                  <h2 class="text-3xl">T-shirt for Dogs</h2>
+                  <p class="sora-font"> Discover a world of treats, toys, and <br>  essentials handpicked for  </p>
+                  <button class="border w-22 p-2 text-xs bg-white rounded-md sora-font">Shop Now</button>
+                 </div>
+                  <div class="">
+                    <img class="" src="c1-assets/cute-pet-small.png" alt="">
+                  </div>
+            </div>
+            <!-- for small -->
+            <div class=" sm:block hidden md:grid md:grid-cols-3 md:gap-3">
+
+              <div class="w-67 h-29  bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img  src="c1-assets/dog-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font mr-8">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img  src="c1-assets/fish-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font mr-8">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/bird-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font mr-8">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/rabbit-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/bird-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/pet-couch.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/fish-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/pet-couch.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+              <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+                 <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                   <img class="" src="c1-assets/rabbit-cartoon.png" alt="">
+                 
+                 </div>
+                 <div class="sora-font">
+                  <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                    <p>4.5</p>
+                  </div>
+                  <p>Pet Bed</p>
+                  <p>$39.99</p>
+                 </div>
+              </div>
+             
+              
+            </div>
+
+         </div>
+          <!-- for mobile -->
+          <div class="mt-2  grid grid-cols-2 sm:hidden">
+
+            <div class="w-67 h-29  bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img  src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font mr-8">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img  src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font mr-8">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font mr-8">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            <div class="w-67 h-29 bg-white border flex gap-3 p-2">
+               <div class="h-20 w-20 bg-[#FFF9F4] flex justify-center items-center">
+                 <img class="" src="c1-assets/pet-couch.png" alt="">
+               
+               </div>
+               <div class="sora-font">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Pet Bed</p>
+                <p>$39.99</p>
+               </div>
+            </div>
+            
+            
+          </div>
+      </div>
+     </section>
+     <!-- everyday low price -->
+     <section class="container mx-auto mt-9 w-full mb-60">
+      <h2 class="text-3xl mb-9">Everyday low Price</h2>
+      <div class="mb-5 sm:flex gap-3">
+        <div class=" border flex bg-gradient-to-r from-[#F8CCFB] to-[#F8CCFB] ...">
+          <div class="flex-1 mt-20 mr-2 space-y-3 p-4 ">
+            <p class="sora-font hidden sm:block">Under Price</p>
+            <h2 class="text-2xl">Pet Grooming Mitt</h2>
+            <p class="text-[#ffff] hidden sm:block">(Easy Hair Removal)</p>
+            <h2 class="text-4xl">$7.99</h2>
+          </div>
+          <div class="flex-1">
+            <img src="c1-assets/cute-dog-mid.png" alt="">
+          </div>
+        </div>
+        <div>
+          <div class=" border flex bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] ...">
+            <div class=" mt-10 space-y-3  p-3">
+             <h2 class="text-2xl">T-shirt for Dogs</h2>
+             <h2 class="text-4xl text-[#FFDC26]">$7.99</h2>
+            </div>
+            <div class="">
+              <img class="mt-4" src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- extra -->
+
+            <section class="mt-20">
+
+              <div>
+             <h2 class="text-3xl text-center mb-3">Always Remember <span class="text-red-800 font-bold">!</span></h2>
+              
+             <p  class="text-center sora-font text-xl">Until one has loved an animal a part of one's soul remains unawakened. <br> ---Anatole France
+             </p>
+     
+     
+              </div>
+     
+            </section>
+
+     </section>
+
+ 
+
+
+   </main>
+   <!-- footer -->
+       <footer class="bg-[#F9DF8A] ">
+        <div class="">
+        <div class="container mx-auto border sm:flex bg-[#FFF9F4]  mb-9 ">
+          <div class="mr-5 w-1/2">
+            <img class="p-6" src="c1-assets/cute-pet-mid.png" alt="">
+          </div>
+          <div class=" w-1/2 m-14 space-y-4">
+           <h2 class="text-3xl">Get awesome News!</h2>
+           <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
+           <input class="p-4" placeholder="Email here..." type="email" name="" id=""><br>
+           <button class="border border-1 p-1 mt-px rounded-md w-30 h-8 border-[#FFDC26] bg-[#FFDC26] mr-1 sora-font">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="container mx-auto sm:flex justify-between ">
+        <div class="space-y-4">
+           <div class="flex gap-4">
+            <img src="c1-assets/logo-footer.png" alt="">
+            <h2 class="sora-font text-2xl">Browser Pet</h2>
+           </div>
+            <div>
+              <p class="sora-font">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+        </div>
+         <div class="flex flex-col gap-5 sora-font">
+        <a href="">Find a Pet</a>
+        <a href="">Breeds</a>
+         <a href="">Contact Us</a>
+
+         </div>
+          <div>
+             <p class="sora-font">Follow Us</p>
+             <div class="space-x-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+             </div>
+
+          </div>
+
+
+
+        </div>
+    </footer>
 </body>
 </html>
